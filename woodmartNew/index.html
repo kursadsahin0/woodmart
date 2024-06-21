@@ -1,0 +1,1361 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="asset/css/slider.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>DEMO</title>
+</head>
+
+<body>
+    <!--  TOP INFO START-->
+    <section class="top-info">
+        <div class="container ">
+            <div class="row py-1">
+                <div class="col-lg-6 d-flex align-items-center">
+
+                    <div class="dropdown border-x display-none-xl">
+                        <button class="btn dropdown-toggle text-white text-sm " type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            English
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item text-sm" href="#">Deutsch</a></li>
+                            <li><a class="dropdown-item text-sm" href="#">French</a></li>
+                            <li><a class="dropdown-item text-sm" href="#">Requires WPML plugin</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown border-x display-none-xl">
+                        <button class="btn dropdown-toggle text-white text-sm" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Country
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item text-sm" href="#">United States (USD)</a></li>
+                            <li><a class="dropdown-item text-sm" href="#">Deutschland (EUR)</a></li>
+                            <li><a class="dropdown-item text-sm" href="#">Japan (JPY)</a></li>
+                        </ul>
+                    </div>
+
+                    <span class="text-white text-xs font-weight-bold px-3 display-none-xl">
+                        FREE SHIPPING FOR ALL ORDERS OF $150
+                    </span>
+                </div>
+                <div
+                    class="col-lg-6 col-md-12 text-center text-white text-sm d-lg-flex d-block  align-items-center flex-row-reverse">
+                    <span class="px-2 border-x display-none-xl">FAQS</span>
+                    <span class="px-2 border-x display-none-xl">CONTACT US</span>
+                    <span class="px-2 border-x display-none-xl"><i class="px-1 fa-solid fa-envelope"></i>
+                        NEWSLETTER</span>
+                    <span class="text-white text-sm px-2">
+                        <i class="px-1 fa-brands fa-facebook-f"></i>
+                        <i class="px-1 fa-brands fa-instagram"></i>
+                        <i class="px-1 fa-brands fa-youtube"></i>
+                        <i class="px-1 fa-solid fa-envelope"></i>
+                        <i class="px-1 fa-brands fa-twitter"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  TOP INFO FINIHS-->
+
+    <!-- HEADER START-->
+    <header>
+        <div class="container mt-lg-3 mt-0">
+            <div class="row ">
+                <div class="col-2 display-none-web center-2">
+                    <button class="btn" onclick="openmobilmenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="col-lg-3 py-3 col-8 text-center ">
+
+                    <img src="/img/logo-black.png" alt="" class="logo brand">
+
+                </div>
+                <div class="col-lg-6 py-3  display-none-xl">
+
+                    <form action="" class="form-group">
+                        <input type="search" class="form-control p-2 font-weight-bold text-sm" name="" id=""
+                            placeholder="Search for product">
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-lg-3 col-2 py-3 d-flex justify-content-around align-items-center">
+
+                    <a href="" class=" display-none-xl text-sm d-block font-weight-bold text-dark">
+                        LOGIN / REGISTER
+                    </a>
+
+                    <a href="" class=" display-none-xl text-lg d-block text-dark position-realitive">
+                        <i class="fa-solid fa-heart"></i> <span class="badge badge-success text-xs">0</span>
+                    </a>
+
+                    <a href="" class=" display-none-xl text-lg d-block text-dark position-realitive">
+                        <i class="fa-solid fa-down-left-and-up-right-to-center"></i><span
+                            class="badge badge-success text-xs">0</span>
+                    </a>
+
+                    <a type="button" role="button" onclick="basketopen()" class="text-lg d-block text-dark">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- NAVBAR START -->
+        <nav class="border-top border-bottom display-none-xl">
+            <div class="container position-realitive">
+                <div class="row">
+                    <!-- CATEGORUES MENU START -->
+                    <div class="col-md-3 position-realitive">
+
+                        <button class="btn btn-bs text-white border-radius-0 py-3 w-100 text-sm d-flex">
+                            <i class="fa-solid fa-bars text-lg"></i>
+                            <span class="px-3 font-weight-bold text-xs"> BROWSE CATEGORIES</span>
+                            <i class="fa-solid fa-chevron-down ms-auto "></i>
+                        </button>
+
+                        <div class="aside-menu">
+
+                            <!-- FURNITURE MENU-->
+                            <button
+                                class="btn d-flex text-sm border-gray-200 font-weight-bold  px-3 align-items-center w-100"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class=" pe-2 fa-solid fa-chair"></i>FURNITURE</a> <i
+                                    class="fa-solid fa-angle-right"></i>
+                            </button>
+                            <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                                <div class="row aside-row">
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title-img">
+                                            <img src="asset/img/product/img1.jpg" alt="">
+                                        </div>
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">CLOCKS</div>
+                                        <a href="">Mantel Clocks</a>
+                                        <a href="">Anniversary Clocks</a>
+                                        <a href="">Wall Clocks</a>
+                                        <a href="">Digital Clocks</a>
+                                        <a href="">Travel and Alarm</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title-img">
+                                            <img src="asset/img/product/img2.jpg" alt="">
+                                        </div>
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">TABLETOP</div>
+                                        <a href="">Pepper Shakers</a>
+                                        <a href="">Spice Jars</a>
+                                        <a href="">Dish Drainers</a>
+                                        <a href="">Сocktail Shakers</a>
+                                        <a href="">Utensil Holders</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title-img">
+                                            <img src="asset/img/product/img3.jpg" alt="">
+                                        </div>
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">KITCHEN</div>
+                                        <a href="">Oil Vinegar Sets</a>
+                                        <a href="">Bottle Racks</a>
+                                        <a href="">Chopping Boards</a>
+                                        <a href="">Vacuum Flasks</a>
+                                        <a href="">Utensil Holders</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title-img">
+                                            <img src="asset/img/product/img4.jpg" alt="">
+                                        </div>
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">LIGHTING</div>
+                                        <a href="">Interior Lighting</a>
+                                        <a href="">Ceiling Lamps</a>
+                                        <a href="">Wall Lamps</a>
+                                        <a href="">Floor Lamps</a>
+                                        <a href="">Ceiling Lamps</a>
+                                    </div>
+                                </div>
+                                <div class="row aside-firma">
+                                    <div class="col-lg-3 p-5">
+                                        <img class="w-100" src="asset/img/company/brand-alessi.png" alt="">
+                                    </div>
+                                    <div class="col-lg-3 p-5">
+                                        <img class="w-100" src="asset/img/company/brand-Eva-Solo.png" alt="">
+                                    </div>
+                                    <div class="col-lg-3 p-5">
+                                        <img class="w-100" src="asset/img/company/brand-PackIt.png" alt="">
+                                    </div>
+                                    <div class="col-lg-3 p-5">
+                                        <img class="w-100" src="asset/img/company/brand-witra.png" alt="">
+                                    </div>
+                                </div>
+                            </ul>
+
+                            <!-- COOKING MENU-->
+                            <button
+                                class="btn d-flex text-sm border-gray-200 font-weight-bold  px-3 align-items-center w-100"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <i class=" pe-2 fa-solid fa-utensils"></i>
+                                COOKING
+                                <i class="fa-solid fa-angle-right"></i>
+
+                            </button>
+                            <ul class="dropdown-menu bg-image-cooking" aria-labelledby="dropdownMenuButton1">
+                                <div class="row aside-row">
+                                    <div class="col-lg-3 px-5">
+
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">CLOCKS</div>
+                                        <a href="">Mantel Clocks</a>
+                                        <a href="">Anniversary Clocks</a>
+                                        <a href="">Wall Clocks</a>
+                                        <a href="">Digital Clocks</a>
+                                        <a href="">Travel and Alarm</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">TABLETOP</div>
+                                        <a href="">Pepper Shakers</a>
+                                        <a href="">Spice Jars</a>
+                                        <a href="">Dish Drainers</a>
+                                        <a href="">Сocktail Shakers</a>
+                                        <a href="">Utensil Holders</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">KITCHEN</div>
+                                        <a href="">Oil Vinegar Sets</a>
+                                        <a href="">Bottle Racks</a>
+                                        <a href="">Chopping Boards</a>
+                                        <a href="">Vacuum Flasks</a>
+                                        <a href="">Utensil Holders</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">LIGHTING</div>
+                                        <a href="">Interior Lighting</a>
+                                        <a href="">Ceiling Lamps</a>
+                                        <a href="">Wall Lamps</a>
+                                        <a href="">Floor Lamps</a>
+                                        <a href="">Ceiling Lamps</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">KITCHEN</div>
+                                        <a href="">Oil Vinegar Sets</a>
+                                        <a href="">Bottle Racks</a>
+                                        <a href="">Chopping Boards</a>
+                                        <a href="">Vacuum Flasks</a>
+                                        <a href="">Utensil Holders</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">LIGHTING</div>
+                                        <a href="">Interior Lighting</a>
+                                        <a href="">Ceiling Lamps</a>
+                                        <a href="">Wall Lamps</a>
+                                        <a href="">Floor Lamps</a>
+                                        <a href="">Ceiling Lamps</a>
+                                    </div>
+                                </div>
+                            </ul>
+
+                            <!-- ACCESSORIES MENU-->
+                            <button
+                                class="btn d-flex text-sm border-gray-200 font-weight-bold  px-3 align-items-center w-100"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <i class=" pe-2 fa-solid fa-hat-wizard"></i>
+                                ACCESSORIES
+                                <i class="fa-solid fa-angle-right"></i>
+
+                            </button>
+                            <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                                <div class="row aside-row">
+                                    <div class="col-lg-8 px-5">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="title font-weight-bold text-md mt-3 mb-2">CLOCKS</div>
+                                                <a href="">Mantel Clocks</a>
+                                                <a href="">Anniversary Clocks</a>
+                                                <a href="">Wall Clocks</a>
+                                                <a href="">Digital Clocks</a>
+                                                <a href="">Travel and Alarm</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="title font-weight-bold text-md mt-3 mb-2">CLOCKS</div>
+                                                <a href="">Mantel Clocks</a>
+                                                <a href="">Anniversary Clocks</a>
+                                                <a href="">Wall Clocks</a>
+                                                <a href="">Digital Clocks</a>
+                                                <a href="">Travel and Alarm</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="title font-weight-bold text-md mt-3 mb-2">CLOCKS</div>
+                                                <a href="">Mantel Clocks</a>
+                                                <a href="">Anniversary Clocks</a>
+                                                <a href="">Wall Clocks</a>
+                                                <a href="">Digital Clocks</a>
+                                                <a href="">Travel and Alarm</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="title font-weight-bold text-md mt-3 mb-2">CLOCKS</div>
+                                                <a href="">Mantel Clocks</a>
+                                                <a href="">Anniversary Clocks</a>
+                                                <a href="">Wall Clocks</a>
+                                                <a href="">Digital Clocks</a>
+                                                <a href="">Travel and Alarm</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 px-5">
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">SUMMER STYLE</div>
+                                        <div class="row py-3 border-bottom">
+                                            <div class="col-4">
+                                                <img src="asset/img/product/img1.jpg" class="w-100" alt="">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="font-weight-bold text-dark text-xs">Decoration wooden
+                                                    present</div>
+                                                <div class="text-success font-weight-bold text-xs">119.00TL</div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row py-3 border-bottom">
+                                            <div class="col-4">
+                                                <img src="asset/img/product/img1.jpg" class="w-100" alt="">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="font-weight-bold text-dark text-xs">Decoration wooden
+                                                    present</div>
+                                                <div class="text-success font-weight-bold text-xs">119.00TL</div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row py-3 border-bottom">
+                                            <div class="col-4">
+                                                <img src="asset/img/product/img1.jpg" class="w-100" alt="">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="font-weight-bold text-dark text-xs">Decoration wooden
+                                                    present</div>
+                                                <div class="text-success font-weight-bold text-xs">119.00TL</div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row py-3 border-bottom">
+                                            <div class="col-4">
+                                                <img src="asset/img/product/img1.jpg" class="w-100" alt="">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="font-weight-bold text-dark text-xs">Decoration wooden
+                                                    present</div>
+                                                <div class="text-success font-weight-bold text-xs">119.00TL</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+
+                            <!-- FASHION MENU-->
+                            <button
+                                class="btn d-flex text-sm border-gray-200 font-weight-bold  px-3 align-items-center w-100"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <i class=" pe-2 fa-solid fa-shirt"></i>
+                                FASHION
+                                <i class="fa-solid fa-angle-right"></i>
+
+                            </button>
+                            <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                                <div class="row aside-row">
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title-img">
+                                            <img src="asset/img/product/img1.jpg" alt="">
+                                        </div>
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">CLOCKS</div>
+                                        <a href="">Mantel Clocks</a>
+                                        <a href="">Anniversary Clocks</a>
+                                        <a href="">Wall Clocks</a>
+                                        <a href="">Digital Clocks</a>
+                                        <a href="">Travel and Alarm</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title-img">
+                                            <img src="asset/img/product/img2.jpg" alt="">
+                                        </div>
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">TABLETOP</div>
+                                        <a href="">Pepper Shakers</a>
+                                        <a href="">Spice Jars</a>
+                                        <a href="">Dish Drainers</a>
+                                        <a href="">Сocktail Shakers</a>
+                                        <a href="">Utensil Holders</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title-img">
+                                            <img src="asset/img/product/img3.jpg" alt="">
+                                        </div>
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">KITCHEN</div>
+                                        <a href="">Oil Vinegar Sets</a>
+                                        <a href="">Bottle Racks</a>
+                                        <a href="">Chopping Boards</a>
+                                        <a href="">Vacuum Flasks</a>
+                                        <a href="">Utensil Holders</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title-img">
+                                            <img src="asset/img/product/img4.jpg" alt="">
+                                        </div>
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">LIGHTING</div>
+                                        <a href="">Interior Lighting</a>
+                                        <a href="">Ceiling Lamps</a>
+                                        <a href="">Wall Lamps</a>
+                                        <a href="">Floor Lamps</a>
+                                        <a href="">Ceiling Lamps</a>
+                                    </div>
+                                </div>
+                            </ul>
+
+
+                            <!-- CLOCKS MENU -->
+                            <button
+                                class="btn d-flex text-sm border-gray-200 font-weight-bold  px-3 align-items-center w-100"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <i class=" pe-2 fa-solid fa-clock"></i>
+                                CLOCK
+                                <i class="fa-solid fa-angle-right"></i>
+
+                            </button>
+                            <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                                <div class="row aside-row">
+                                    <div class="col-lg-3 px-5">
+
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">INDOOR</div>
+                                        <a href="">Mantel Clocks</a>
+                                        <a href="">Anniversary Clocks</a>
+                                        <a href="">Wall Clocks</a>
+                                        <a href="">Digital Clocks</a>
+                                        <a href="">Travel and Alarm</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">OUTDOOR</div>
+                                        <a href="">Pepper Shakers</a>
+                                        <a href="">Spice Jars</a>
+                                        <a href="">Dish Drainers</a>
+                                        <a href="">Сocktail Shakers</a>
+                                        <a href="">Utensil Holders</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">KITCHEN</div>
+                                        <a href="">Oil Vinegar Sets</a>
+                                        <a href="">Bottle Racks</a>
+                                        <a href="">Chopping Boards</a>
+                                        <a href="">Vacuum Flasks</a>
+                                        <a href="">Utensil Holders</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">DRINK</div>
+                                        <a href="">Interior Lighting</a>
+                                        <a href="">Ceiling Lamps</a>
+                                        <a href="">Wall Lamps</a>
+                                        <a href="">Floor Lamps</a>
+                                        <a href="">Ceiling Lamps</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">INDOOR</div>
+                                        <a href="">Mantel Clocks</a>
+                                        <a href="">Anniversary Clocks</a>
+                                        <a href="">Wall Clocks</a>
+                                        <a href="">Digital Clocks</a>
+                                        <a href="">Travel and Alarm</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">OUTDOOR</div>
+                                        <a href="">Pepper Shakers</a>
+                                        <a href="">Spice Jars</a>
+                                        <a href="">Dish Drainers</a>
+                                        <a href="">Сocktail Shakers</a>
+                                        <a href="">Utensil Holders</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">KITCHEN</div>
+                                        <a href="">Oil Vinegar Sets</a>
+                                        <a href="">Bottle Racks</a>
+                                        <a href="">Chopping Boards</a>
+                                        <a href="">Vacuum Flasks</a>
+                                        <a href="">Utensil Holders</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">DRINK</div>
+                                        <a href="">Interior Lighting</a>
+                                        <a href="">Ceiling Lamps</a>
+                                        <a href="">Wall Lamps</a>
+                                        <a href="">Floor Lamps</a>
+                                        <a href="">Ceiling Lamps</a>
+                                    </div>
+                                </div>
+                                <div class="row aside-firma">
+                                    <div class="col-lg-3 p-5">
+                                        <img class="w-100" src="asset/img/company/brand-alessi.png" alt="">
+                                    </div>
+                                    <div class="col-lg-3 p-5">
+                                        <img class="w-100" src="asset/img/company/brand-Eva-Solo.png" alt="">
+                                    </div>
+                                    <div class="col-lg-3 p-5">
+                                        <img class="w-100" src="asset/img/company/brand-PackIt.png" alt="">
+                                    </div>
+                                    <div class="col-lg-3 p-5">
+                                        <img class="w-100" src="asset/img/company/brand-witra.png" alt="">
+                                    </div>
+                                </div>
+                            </ul>
+
+                            <!-- LIGHTING MENU-->
+                            <button
+                                class="btn d-flex text-sm border-gray-200 font-weight-bold  px-3 align-items-center w-100"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <i class=" pe-2 fa-solid fa-bolt"></i>
+                                LIGHTING
+                                <i class="fa-solid fa-angle-right"></i>
+
+                            </button>
+                            <ul class="dropdown-menu bg-image-lignting" aria-labelledby="dropdownMenuButton1">
+                                <div class="row aside-row">
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">CLOCKS</div>
+                                        <a href="">Mantel Clocks</a>
+                                        <a href="">Anniversary Clocks</a>
+                                        <a href="">Wall Clocks</a>
+                                        <a href="">Digital Clocks</a>
+                                        <a href="">Travel and Alarm</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">TABLETOP</div>
+                                        <a href="">Pepper Shakers</a>
+                                        <a href="">Spice Jars</a>
+                                        <a href="">Dish Drainers</a>
+                                        <a href="">Сocktail Shakers</a>
+                                        <a href="">Utensil Holders</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">KITCHEN</div>
+                                        <a href="">Oil Vinegar Sets</a>
+                                        <a href="">Bottle Racks</a>
+                                        <a href="">Chopping Boards</a>
+                                        <a href="">Vacuum Flasks</a>
+                                        <a href="">Utensil Holders</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">LIGHTING</div>
+                                        <a href="">Interior Lighting</a>
+                                        <a href="">Ceiling Lamps</a>
+                                        <a href="">Wall Lamps</a>
+                                        <a href="">Floor Lamps</a>
+                                        <a href="">Ceiling Lamps</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">KITCHEN</div>
+                                        <a href="">Oil Vinegar Sets</a>
+                                        <a href="">Bottle Racks</a>
+                                        <a href="">Chopping Boards</a>
+                                        <a href="">Vacuum Flasks</a>
+                                        <a href="">Utensil Holders</a>
+                                    </div>
+                                    <div class="col-lg-3 px-5">
+                                        <div class="title font-weight-bold text-md mt-3 mb-2">LIGHTING</div>
+                                        <a href="">Interior Lighting</a>
+                                        <a href="">Ceiling Lamps</a>
+                                        <a href="">Wall Lamps</a>
+                                        <a href="">Floor Lamps</a>
+                                        <a href="">Ceiling Lamps</a>
+                                    </div>
+                                </div>
+                            </ul>
+
+                            <!-- TOYS MENU-->
+                            <button
+                                class="btn d-flex text-sm border-gray-200 font-weight-bold  px-3 align-items-center w-100"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <i class=" pe-2 fa-solid fa-gamepad"></i>
+                                TOYS
+                                <i class="fa-solid fa-angle-right"></i>
+
+                            </button>
+                            <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                                <div class="row aside-row">
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <div class="col-lg-4 px-5">
+                                                <div class="title font-weight-bold text-md mt-3 mb-2">CLOCKS</div>
+                                                <a href="">Mantel Clocks</a>
+                                                <a href="">Anniversary Clocks</a>
+                                                <a href="">Wall Clocks</a>
+                                                <a href="">Digital Clocks</a>
+                                                <a href="">Travel and Alarm</a>
+                                            </div>
+                                            <div class="col-lg-4 px-5">
+                                                <div class="title font-weight-bold text-md mt-3 mb-2">TABLETOP</div>
+                                                <a href="">Pepper Shakers</a>
+                                                <a href="">Spice Jars</a>
+                                                <a href="">Dish Drainers</a>
+                                                <a href="">Сocktail Shakers</a>
+                                                <a href="">Utensil Holders</a>
+                                            </div>
+                                            <div class="col-lg-4 px-5">
+                                                <div class="title font-weight-bold text-md mt-3 mb-2">KITCHEN</div>
+                                                <a href="">Oil Vinegar Sets</a>
+                                                <a href="">Bottle Racks</a>
+                                                <a href="">Chopping Boards</a>
+                                                <a href="">Vacuum Flasks</a>
+                                                <a href="">Utensil Holders</a>
+                                            </div>
+                                            <div class="col-lg-4 px-5">
+                                                <div class="title font-weight-bold text-md mt-3 mb-2">LIGHTING</div>
+                                                <a href="">Interior Lighting</a>
+                                                <a href="">Ceiling Lamps</a>
+                                                <a href="">Wall Lamps</a>
+                                                <a href="">Floor Lamps</a>
+                                                <a href="">Ceiling Lamps</a>
+                                            </div>
+                                            <div class="col-lg-4 px-5">
+                                                <div class="title font-weight-bold text-md mt-3 mb-2">KITCHEN</div>
+                                                <a href="">Oil Vinegar Sets</a>
+                                                <a href="">Bottle Racks</a>
+                                                <a href="">Chopping Boards</a>
+                                                <a href="">Vacuum Flasks</a>
+                                                <a href="">Utensil Holders</a>
+                                            </div>
+                                            <div class="col-lg-4 px-5">
+                                                <div class="title font-weight-bold text-md mt-3 mb-2">LIGHTING</div>
+                                                <a href="">Interior Lighting</a>
+                                                <a href="">Ceiling Lamps</a>
+                                                <a href="">Wall Lamps</a>
+                                                <a href="">Floor Lamps</a>
+                                                <a href="">Ceiling Lamps</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="row">
+                                            <div class="col-lg-12 px-5">
+                                                <div class="card-img position-realitive">
+
+                                                    <img src="asset/img/product/img4.jpg" class="w-100" alt="">
+
+                                                    <div class="indirim-box bg-bs">
+                                                        <div class="text font-weight-bold">
+                                                            -17%
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="select py-2 px-3 bg-white">
+                                                        <a href="">
+                                                            <i class="text-xl fa-solid fa-heart"></i>
+                                                        </a>
+                                                        <a href="">
+                                                            <i
+                                                                class="text-xl fa-solid fa-down-left-and-up-right-to-center"></i>
+                                                        </a>
+                                                        <a href="">
+                                                            <i class="text-xl fa-solid fa-bag-shopping"></i>
+                                                        </a>
+                                                    </div>
+
+                                                    <a class="btn btn-bs add-basket text-white">
+                                                        ADD TO CART
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="title text-sm font-weight-bold py-2 text-center">
+                                                    Ullamcorper arcu elementum
+                                                </div>
+
+                                                <div class="text-sm text-center" style="opacity: .5;">Clock</div>
+
+                                                <div class="rating text-sm text-center">
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-warning"></i>
+                                                    <i class="fa-solid fa-star text-seconday"></i>
+                                                </div>
+
+                                                <div class="price w-100 text-center">
+                                                    <div class="bagde text-seconday text-sm" style="opacity: .6;">
+                                                        379.99TL
+                                                    </div>
+                                                    <div class="text-bs text-md font-weight-bold">
+                                                        339.00TL
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+
+                            <!-- HAND MADE MENU-->
+                            <button
+                                class="btn d-flex text-sm border-gray-200 font-weight-bold  px-3 align-items-center w-100"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class=" pe-2 fa-solid fa-cookie"></i>
+                                hand made
+
+                            </button>
+
+                            <!-- MINIMALISM MENU-->
+                            <button
+                                class="btn d-flex text-sm border-gray-200 font-weight-bold  px-3 align-items-center w-100"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class=" pe-2 fa-solid fa-briefcase"></i>
+                                MINIMALISM
+
+                            </button>
+
+                            <!-- ELEKTRONICS MENU-->
+                            <button
+                                class="btn d-flex text-sm border-gray-200 font-weight-bold  px-3 align-items-center w-100"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <i class=" pe-2 fa-solid fa-laptop-medical"></i>
+                                ELECTRONUCS
+
+                            </button>
+
+                            <!-- CARS MENU-->
+                            <button
+                                class="btn d-flex text-sm border-gray-200 font-weight-bold  px-3 align-items-center w-100"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <i class=" pe-2 fa-solid fa-car"></i>
+                                CARS
+
+                            </button>
+
+                        </div>
+                    </div>
+                    <!-- CATEGORUES MENU FINIHS -->
+
+                    <!-- MAIN MENU START-->
+                    <div class="col-md-6 d-flex align-items-center main-menu position-unset">
+                        <div class="dropdown position-unset">
+                            <button class="btn dropdown-toggle text-sm position-unset font-weight-bold" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                HOME
+                            </button>
+                            <ul class="dropdown-menu menu-grid" aria-labelledby="dropdownMenuButton1">
+                                <li class="text-center"><img src="asset/img/menu-img/img5.jpg" alt="">
+                                    <p class="text-dark font-weight-bold text-sm mt-2">CARD NAME</p>
+                                </li>
+                                <li class="text-center"><img src="asset/img/menu-img/img5.jpg" alt="">
+                                    <p class="text-dark font-weight-bold text-sm mt-2">CARD NAME</p>
+                                </li>
+                                <li class="text-center"><img src="asset/img/menu-img/img5.jpg" alt="">
+                                    <p class="text-dark font-weight-bold text-sm mt-2">CARD NAME</p>
+                                </li>
+                                <li class="text-center"><img src="asset/img/menu-img/img5.jpg" alt="">
+                                    <p class="text-dark font-weight-bold text-sm mt-2">CARD NAME</p>
+                                </li>
+                                <li class="text-center"><img src="asset/img/menu-img/img5.jpg" alt="">
+                                    <p class="text-dark font-weight-bold text-sm mt-2">CARD NAME</p>
+                                </li>
+                                <li class="text-center"><img src="asset/img/menu-img/img1.jpg" alt="">
+                                    <p class="text-dark font-weight-bold text-sm mt-2">CARD NAME</p>
+                                </li>
+                                <li class="text-center"><img src="asset/img/menu-img/img2.jpg" alt="">
+                                    <p class="text-dark font-weight-bold text-sm mt-2">CARD NAME</p>
+                                </li>
+                                <li class="text-center"><img src="asset/img/menu-img/img3.jpg" alt="">
+                                    <p class="text-dark font-weight-bold text-sm mt-2">CARD NAME</p>
+                                </li>
+                                <li class="text-center"><img src="asset/img/menu-img/img4.jpg" alt="">
+                                    <p class="text-dark font-weight-bold text-sm mt-2">CARD NAME</p>
+                                </li>
+                                <li class="text-center"><img src="asset/img/menu-img/img5.jpg" alt="">
+                                    <p class="text-dark font-weight-bold text-sm mt-2">CARD NAME</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown position-unset">
+                            <button class="btn dropdown-toggle text-sm position-unset font-weight-bold" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                SHOP
+                            </button>
+                            <ul class="dropdown-menu d-flex" aria-labelledby="dropdownMenuButton1">
+                                <div class="container menu">
+                                    <div class="row py-5">
+                                        <div class="col-lg-2 col-md-4 text-gray">
+                                            <div class="title font-weight-bold text-dark">SHOP LAYOUTS</div>
+                                            <br>
+                                            <a href="" class=" text-sm text-dark py-1">Filters area</a>
+                                            <a href="" class=" text-sm text-dark py-1">Hidden sidebar</a>
+                                            <a href="" class=" text-sm text-dark py-1">No page heading</a>
+                                            <a href="" class=" text-sm text-dark py-1">Small categories menu</a>
+                                            <a href="" class=" text-sm text-dark py-1">Products list view</a>
+                                            <a href="" class=" text-sm text-dark py-1">With background</a>
+                                            <a href="" class=" text-sm text-dark py-1">Category description</a>
+                                            <a href="" class=" text-sm text-dark py-1">Only categories</a>
+                                            <a href="" class=" text-sm text-dark py-1">Header overlap </a>
+                                            <a href="" class=" text-sm text-dark py-1">Infinity scrolling</a>
+                                            <a href="" class=" text-sm text-dark py-1">Load more button</a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 text-gray">
+                                            <div class="title font-weight-bold text-dark">CUSTOM LAYOUTS</div>
+                                            <br>
+                                            <a href="" class=" text-sm text-dark py-1">Custom shop page#1</a>
+                                            <a href="" class=" text-sm text-dark py-1">Custom shop page#2</a>
+                                            <a href="" class=" text-sm text-dark py-1">Custom shop page#3</a>
+                                            <a href="" class=" text-sm text-dark py-1">Custom shop page#4</a>
+                                            <a href="" class=" text-sm text-dark py-1">Custom shop page#5</a>
+                                            <a href="" class=" text-sm text-dark py-1">Custom shop page#6</a>
+                                            <a href="" class=" text-sm text-dark py-1">Custom shop page#7</a>
+                                            <a href="" class=" text-sm text-dark py-1">Custom shop page#8</a>
+                                            <a href="" class=" text-sm text-dark py-1">Custom shop page#9</a>
+                                            <a href="" class=" text-sm text-dark py-1">Custom shop page#10</a>
+                                            <a href="" class=" text-sm text-dark py-1">Custom shop page#11</a>
+                                            <a href="" class=" text-sm text-dark py-1">Custom shop page#12</a>
+                                        </div>
+                                      
+                                       
+                                     
+                                        
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown position-unset">
+                            <button class="btn dropdown-toggle text-sm font-weight-bold" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                BLOG
+                            </button>
+                            <ul class="dropdown-menu d-flex" aria-labelledby="dropdownMenuButton1"
+                                style="background-color: #ffffff00;">
+                                <div class="container menu">
+                                    <div class="row">
+                                        <div class="col-lg-4"></div>
+                                        <div class="col-lg-2 col-md-4 text-gray  py-5 bg-white px-5">
+                                            <div class="title font-weight-bold text-dark">BLOG TYPES</div>
+                                            <br>
+                                            <a href="" class=" text-sm text-dark py-1">Alternative</a>
+                                            <a href="" class=" text-sm text-dark py-1">Small images</a>
+                                            <a href="" class=" text-sm text-dark py-1">Blog chess</a>
+                                            <a href="" class=" text-sm text-dark py-1">Masonry grid</a>
+                                            <a href="" class=" text-sm text-dark py-1">Meta on image</a>
+                                            <a href="" class=" text-sm text-dark py-1">Infinit scrolling <span
+                                                    class="badge bg-success text-white">New</span></a>
+                                            <a href="" class=" text-sm text-dark py-1">Blog flat</a>
+                                            <a href="" class=" text-sm text-dark py-1">Default flat</a>
+                                            <a href="" class=" text-sm text-dark py-1">Blog mask</a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 text-gray  py-5 bg-white">
+                                            <div class="title font-weight-bold text-dark">SINGLE POSTS<span
+                                                    class="badge bg-warning text-white">New</span></div>
+                                            <br>
+                                            <a href="" class=" text-sm text-dark py-1">Post example #1</a>
+                                            <a href="" class=" text-sm text-dark py-1">Post example #1</a>
+                                            <a href="" class=" text-sm text-dark py-1">Post example #1</a>
+                                            <a href="" class=" text-sm text-dark py-1">Post example #1 <span
+                                                    class="badge bg-info text-white">New</span></a>
+                                            <a href="" class=" text-sm text-dark py-1">Post example #1</a>
+                                            <a href="" class=" text-sm text-dark py-1">Post example #1</a>
+                                            <a href="" class=" text-sm text-dark py-1">Post example #1</a>
+                                            <a href="" class=" text-sm text-dark py-1">Post example #1</a>
+                                            <a href="" class=" text-sm text-dark py-1">Post example #1</a>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 text-gray  py-5 bg-light">
+                                            <div class="title font-weight-bold text-dark">RECENT POSTS</div>
+                                            <a href="" class="d-block">
+                                                <div class="menu-blog">
+                                                    <div class="img p-2">
+                                                        <img src="asset/img/menu-img/img1.jpg" class="w-100" alt="">
+                                                    </div>
+                                                    <div class="text text-dark p-2">
+                                                        <div class="title text-dark font-weight-bold mb-3">A companion
+                                                            for extra sleeping</div>
+                                                        <div class="date text-xs" style="opacity: .6;">July 23, 2016 1
+                                                            Comment</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a href="" class="d-block">
+                                                <div class="menu-blog">
+                                                    <div class="img p-2">
+                                                        <img src="asset/img/menu-img/img1.jpg" class="w-100" alt="">
+                                                    </div>
+                                                    <div class="text text-dark p-2">
+                                                        <div class="title text-dark font-weight-bold mb-3">A companion
+                                                            for extra sleeping</div>
+                                                        <div class="date text-xs" style="opacity: .6;">July 23, 2016 1
+                                                            Comment</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown position-unset">
+                            <button class="btn dropdown-toggle text-sm position-unset font-weight-bold" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                PAGES
+                            </button>
+                            <ul class="dropdown-menu d-flex" aria-labelledby="dropdownMenuButton1"
+                                style="background-color: #ffffff00;">
+                                <div class="container menu">
+                                    <div class="row ">
+                                        <div class="col-lg-4"></div>
+                                        <div class="col-lg-2 col-md-4 py-5 bg-white px-5 text-gray">
+                                            <div class="title font-weight-bold text-dark">DEMO LAYOUTS</div>
+                                            <br>
+                                            <a href="" class=" text-sm text-dark py-1">Filters area</a>
+                                            <a href="" class=" text-sm text-dark py-1">Hidden sidebar</a>
+                                            <a href="" class=" text-sm text-dark py-1">No page heading</a>
+                                            <a href="" class=" text-sm text-dark py-1">Small categories menu</a>
+                                            <a href="" class=" text-sm text-dark py-1">Bordered grid</a>
+                                            <a href="" class=" text-sm text-dark py-1">Products list view <span
+                                                    class="badge bg-success text-white">New</span></a>
+                                            <a href="" class=" text-sm text-dark py-1">With background</a>
+                                            <a href="" class=" text-sm text-dark py-1">Category description</a>
+                                            <a href="" class=" text-sm text-dark py-1">Only categories</a>
+                                            <a href="" class=" text-sm text-dark py-1">Header overlap <span
+                                                    class="badge bg-warning text-white">New</span></a>
+                                            <a href="" class=" text-sm text-dark py-1">Default shop</a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 py-5 bg-white text-gray">
+                                            <div class="title font-weight-bold text-dark">PRE-BUILT PAGES<span
+                                                    class="badge bg-warning text-white">New</span></div>
+                                            <br>
+                                            <a href="" class=" text-sm text-dark py-1">Filters area</a>
+                                            <a href="" class=" text-sm text-dark py-1">Hidden sidebar</a>
+                                            <a href="" class=" text-sm text-dark py-1">No page heading</a>
+                                            <a href="" class=" text-sm text-dark py-1">Small categories menu <span
+                                                    class="badge bg-info text-white">New</span></a>
+                                            <a href="" class=" text-sm text-dark py-1">Bordered grid</a>
+                                            <a href="" class=" text-sm text-dark py-1">Products list view</a>
+                                            <a href="" class=" text-sm text-dark py-1">With background</a>
+                                            <a href="" class=" text-sm text-dark py-1">Category description</a>
+                                            <a href="" class=" text-sm text-dark py-1">Only categories</a>
+                                            <a href="" class=" text-sm text-dark py-1">Header overlap</a>
+                                            <a href="" class=" text-sm text-dark py-1">Default shop</a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 py-5 bg-white text-gray">
+                                            <div class="title font-weight-bold text-dark">PORTFOLIO</div>
+                                            <br>
+                                            <a href="" class="text-sm text-dark py-1">Filters area</a>
+                                            <a href="" class="text-sm text-dark py-1">Hidden sidebar</a>
+                                            <a href="" class="text-sm text-dark py-1">No page heading</a>
+                                            <a href="" class="text-sm text-dark py-1">Small categories menu</a>
+                                            <a href="" class="text-sm text-dark py-1">Bordered grid</a>
+                                            <a href="" class="text-sm text-dark py-1">Products list view</a>
+                                            <a href="" class="text-sm text-dark py-1">With background</a>
+                                            <a href="" class="text-sm text-dark py-1">Category description</a>
+                                            <a href="" class="text-sm text-dark py-1">Only categories</a>
+                                            <a href="" class="text-sm text-dark py-1">Header overlap</a>
+                                            <a href="" class="text-sm text-dark py-1">Default shop</a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 py-5 bg-white text-gray">
+                                            <div class="title font-weight-bold text-dark">HEADERS<span
+                                                    class="badge bg-danger text-white">New</span></div>
+                                            <br>
+                                            <a href="" class=" text-sm text-dark py-1">Filters area</a>
+                                            <a href="" class=" text-sm text-dark py-1">Hidden sidebar</a>
+                                            <a href="" class=" text-sm text-dark py-1">No page heading</a>
+                                            <a href="" class=" text-sm text-dark py-1">Small categories menu</a>
+                                            <a href="" class=" text-sm text-dark py-1">Bordered grid</a>
+                                            <a href="" class=" text-sm text-dark py-1">Products list view</a>
+                                            <a href="" class=" text-sm text-dark py-1">With background</a>
+                                            <a href="" class=" text-sm text-dark py-1">Category description</a>
+                                            <a href="" class=" text-sm text-dark py-1">Only categories</a>
+                                            <a href="" class=" text-sm text-dark py-1">Header overlap</a>
+                                            <a href="" class=" text-sm text-dark py-1">Default shop</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown position-unset">
+                            <button class="btn dropdown-toggle text-sm position-unset font-weight-bold" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                ELEMENTS
+                            </button>
+                            <ul class="dropdown-menu d-flex" aria-labelledby="dropdownMenuButton1"
+                                style="background-color: #ffffff00;">
+                                <div class="container menu">
+                                    <div class="row">
+                                        <div class="col-lg-4"></div>
+                                        <div class="col-lg-2 col-md-4 text-gray  py-5 px-5 bg-white">
+                                            <div class="title font-weight-bold text-dark">THEME ELEMENTS</div>
+                                            <br>
+                                            <a href="" class=" text-sm text-dark py-1">Filters area</a>
+                                            <a href="" class=" text-sm text-dark py-1">Hidden sidebar</a>
+                                            <a href="" class=" text-sm text-dark py-1">No page heading</a>
+                                            <a href="" class=" text-sm text-dark py-1">Small categories menu</a>
+                                            <a href="" class=" text-sm text-dark py-1">Bordered grid</a>
+                                            <a href="" class=" text-sm text-dark py-1">Products list view <span
+                                                    class="badge bg-success text-white">New</span></a>
+                                            <a href="" class=" text-sm text-dark py-1">With background</a>
+                                            <a href="" class=" text-sm text-dark py-1">Category description</a>
+                                            <a href="" class=" text-sm text-dark py-1">Only categories</a>
+                                            <a href="" class=" text-sm text-dark py-1">Header overlap <span
+                                                    class="badge bg-warning text-white">New</span></a>
+                                            <a href="" class=" text-sm text-dark py-1">Default shop</a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 text-gray  py-5 bg-white">
+                                            <div class="title font-weight-bold text-dark">THEME ELEMENTS<span
+                                                    class="badge bg-warning text-white">New</span></div>
+                                            <br>
+                                            <a href="" class=" text-sm text-dark py-1">Filters area</a>
+                                            <a href="" class=" text-sm text-dark py-1">Hidden sidebar</a>
+                                            <a href="" class=" text-sm text-dark py-1">No page heading</a>
+                                            <a href="" class=" text-sm text-dark py-1">Small categories menu <span
+                                                    class="badge bg-info text-white">New</span></a>
+                                            <a href="" class=" text-sm text-dark py-1">Bordered grid</a>
+                                            <a href="" class=" text-sm text-dark py-1">Products list view</a>
+                                            <a href="" class=" text-sm text-dark py-1">With background</a>
+                                            <a href="" class=" text-sm text-dark py-1">Category description</a>
+                                            <a href="" class=" text-sm text-dark py-1">Only categories</a>
+                                            <a href="" class=" text-sm text-dark py-1">Header overlap</a>
+                                            <a href="" class=" text-sm text-dark py-1">Default shop</a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 text-gray  py-5 bg-white">
+                                            <div class="title font-weight-bold text-dark">THEME ELEMENTS</div>
+                                            <br>
+                                            <a href="" class="text-sm text-dark py-1">Filters area</a>
+                                            <a href="" class="text-sm text-dark py-1">Hidden sidebar</a>
+                                            <a href="" class="text-sm text-dark py-1">No page heading</a>
+                                            <a href="" class="text-sm text-dark py-1">Small categories menu</a>
+                                            <a href="" class="text-sm text-dark py-1">Bordered grid</a>
+                                            <a href="" class="text-sm text-dark py-1">Products list view</a>
+                                            <a href="" class="text-sm text-dark py-1">With background</a>
+                                            <a href="" class="text-sm text-dark py-1">Category description</a>
+                                            <a href="" class="text-sm text-dark py-1">Only categories</a>
+                                            <a href="" class="text-sm text-dark py-1">Header overlap</a>
+                                            <a href="" class="text-sm text-dark py-1">Default shop</a>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 text-gray  py-5 bg-white">
+                                            <div class="title font-weight-bold text-dark">WOOCOMMERCE<span
+                                                    class="badge bg-danger text-white">New</span></div>
+                                            <br>
+                                            <a href="" class=" text-sm text-dark py-1">Filters area</a>
+                                            <a href="" class=" text-sm text-dark py-1">Hidden sidebar</a>
+                                            <a href="" class=" text-sm text-dark py-1">No page heading</a>
+                                            <a href="" class=" text-sm text-dark py-1">Small categories menu</a>
+                                            <a href="" class=" text-sm text-dark py-1">Bordered grid</a>
+                                            <a href="" class=" text-sm text-dark py-1">Products list view</a>
+                                            <a href="" class=" text-sm text-dark py-1">With background</a>
+                                            <a href="" class=" text-sm text-dark py-1">Category description</a>
+                                            <a href="" class=" text-sm text-dark py-1">Only categories</a>
+                                            <a href="" class=" text-sm text-dark py-1">Header overlap</a>
+                                            <a href="" class=" text-sm text-dark py-1">Default shop</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <a href="" class="d-block text-dark text-sm font-weight-bold">
+                            BUY
+                        </a>
+                    </div>
+                    <!-- MAIN MENU FINIHS-->
+
+                    <!-- right two menu-->
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </nav>
+        <!-- NACBAR FINIHS-->
+    </header>
+    <!-- HEADER FINIHS-->
+
+
+    <!-- SLIDER START -->
+    <div class="container-fuild">
+        <div class="row">
+            <div class="col-12">
+                <div class="main-slider">
+
+                    <div class="item-1">
+                        <div class="row">
+                            <!-- Boş Col -->
+                            <div class="col-lg-4 display-none-xl"></div>
+
+                            <div class="col-lg-8 col-12">
+                                <div class="row d-flex align-items-center px-3">
+                                    <div class="col-lg-4 col-6">
+                                        <div class="text-slider text-center">
+                                            <div class=" text-effect font-weight-bold" style="opacity:.6;">CAPPELLINI
+                                            </div>
+                                            <h1 class=" text-effect font-weight-bold my-3">Wooden Loungem Charis</h1>
+                                            <p class=" text-effect font-weight-bold m-0" style="opacity:.6;">Semperm
+                                                Vulputatem
+                                                aliquam curae entum qyis gravid fusce cum at.</p>
+                                            <div class=" text-effect price text-bs text-xl font-weight-bold mt-3">
+                                                999.00TL</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-8 col-6">
+                                        <div class="img-slider">
+                                            <img src="asset/img/slider/img1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-2">
+                        <div class="row">
+                            <!-- Boş Col -->
+                            <div class="col-lg-4 display-none-xl"></div>
+
+                            <div class="col-lg-8 col-12">
+                                <div class="row d-flex align-items-center px-3">
+                                    <div class="col-lg-4 col-6">
+                                        <div class="text-slider text-center">
+                                            <h1 class="text-effect font-weight-bold my-3 text-lg-start text-center">
+                                                Simple Rock Chair
+                                            </h1>
+                                            <p class="text-effect font-weight-bold m-0" style="opacity:.6;">Semperm
+                                                Vulputatem
+                                                aliquam curae entum qyis gravid fusce cum at.</p>
+
+                                        </div>
+
+                                        <div class="text-effect img-button d-flex justify-content-around mt-3">
+                                            <button class="btn" onclick="raporgetir(event, 'img2')"><img
+                                                    src="asset/img/slider/img2.jpg" width="40px" alt=""></button>
+                                            <button class="btn" onclick="raporgetir(event, 'igm3')"><img
+                                                    src="asset/img/slider/img3.jpg" width="40px" alt=""></button>
+                                            <button class="btn" onclick="raporgetir(event, 'img4')"><img
+                                                    src="asset/img/slider/img4.jpg" width="40px" alt=""></button>
+                                            <button class="btn" onclick="raporgetir(event, 'img5')"><img
+                                                    src="asset/img/slider/img5.jpg" width="40px" alt=""></button>
+                                        </div>
+
+                                        <div class="text-effect price text-xl font-weight-bold mt-3">999.00TL</div>
+
+                                    </div>
+                                    <div class="col-lg-8 col-6">
+                                        <div class="img-slider">
+                                            <!--  Bu alan bugda kalıyor 1 adet görsel ile sorunu çözdüm -->
+                                            <img src="asset/img/slider/img2.jpg" alt="" style="opacity: 0;">
+                                            <!-- Üstdeki görsel işlemiyor -->
+                                            <img src="asset/img/slider/img2.jpg" class="raporcontent active" id="img2"
+                                                alt="">
+                                            <img src="asset/img/slider/img3.jpg" class="raporcontent" id="igm3" alt="">
+                                            <img src="asset/img/slider/img4.jpg" class="raporcontent" id="img4" alt="">
+                                            <img src="asset/img/slider/img5.jpg" class="raporcontent" id="img5" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-3">
+                        <div class="row">
+                            <!-- Boş Col -->
+                            <div class="col-lg-4 display-none-xl"></div>
+
+                            <div class="col-lg-8 col-12">
+                                <div class="row d-flex align-items-center px-3">
+                                    <div class="col-lg-4 col-6">
+                                        <div class="text-slider text-center">
+                                            <h1 class=" text-effect font-weight-bold my-3 text-lg-start text-center">
+                                                Simple Rock Chair</h1>
+                                            <p class="text-effect font-weight-bold m-0" style="opacity:.6;">Semperm
+                                                Vulputatem
+                                                aliquam curae entum qyis gravid fusce cum at.</p>
+
+                                        </div>
+
+                                        <div class="text-effect img-button d-flex mt-3 colors">
+                                            <span class="font-weight-bold text-sm">COLORS:</span>
+                                            <button class="btn mx-2" onclick="renkgetir(event, 'turkuaz')"></button>
+                                            <button class="btn mx-2" onclick="renkgetir(event, 'kirmizi')"></button>
+                                            <button class="btn mx-2" onclick="renkgetir(event, 'sari')"></button>
+                                        </div>
+
+                                        <div class="text-effect price text-xl font-weight-bold mt-3">Only 99.00TL</div>
+
+                                    </div>
+                                    <div class="col-lg-8 col-6">
+                                        <div class="img-slider">
+                                            <!--  Bu alan bugda kalıyor 1 adet görsel ile sorunu çözdüm -->
+                                            <img src="asset/img/slider/img6.jpg" alt="" style="opacity: 0;">
+                                            <!-- Üstdeki görsel işlemiyor -->
+                                            <img src="asset/img/slider/img6.jpg" class="renkcontent active" id="sari"
+                                                alt="">
+                                            <img src="asset/img/slider/img7.jpg" class="renkcontent" id="turkuaz"
+                                                alt="">
+                                            <img src="asset/img/slider/img8.jpg" class="renkcontent" id="kirmizi"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SLIDER FINIHS -->
+
+    <!-- BASKET CARD START -->
+    <section class="basket-card" id="basket">
+        <div class="card h-100 ms-auto">
+            <div class="card-head d-flex align-items-center justify-content-between border-bottom py-3 px-2">
+                <h5 class="m-0 font-weight-bold">SHOPPİNG CART</h5>
+                <button class="btn font-weight-bold" onclick="basketopen()"><i class="fa-solid fa-xmark"></i> CLOSE
+                </button>
+            </div>
+            <div class="card-body h-100 py-4 text-center">
+                <i class="fa-solid fa-store-slash mb-4 mt-3"></i>
+                <p class="text-dark font-weight-bold">NO PRODUCTS IN THE CART.</p>
+                <button class="btn btn-bs text-white text-sm font-weight-bold">RETURN TO SHOP</button>
+            </div>
+        </div>
+    </section>
+    <!-- BASKET CARD FINIHS -->
+
+
+    <!-- MOBIL MENU START -->
+    <section class="mobil-menu left-menu" id="mobilmenu">
+        <div class="card h-100 me-auto">
+            <div class="card-head d-flex align-items-center justify-content-between border-bottom py-3 px-2">
+                <form action="" class="form-group position-realitive py-3">
+                    <input type="search" class="form-control border-none textr-xs font-weight-bold" name="" id=""
+                        placeholder="Search for product">
+                    <div class="search-icon" style="top: 1.2rem;">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </form>
+                <button class="btn font-weight-bold" onclick="openmobilmenu()"><i class="fa-solid fa-xmark"></i> CLOSE
+                </button>
+            </div>
+            <div class="card-body p-0 h-100 text-center">
+                <div class="row w-100 m-0 p-0">
+                    <div class="col-6 p-0"><button class="btn bg-light w-100 font-weight-bold text-xs py-3 leftbutton"
+                            onclick="leftmenu()">MENU</button></div>
+                    <div class="col-6 p-0"><button class="btn bg-light w-100 font-weight-bold text-xs py-3 rightbutton"
+                            onclick="rightmenu()">CATEGORIES</button></div>
+
+                    <ul class="left-menu p-0">
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">HOME</a></li>
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">DEMOS</a>
+                        </li>
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">SHOP</a></li>
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">BLOG</a></li>
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">PROTFOLIE</a>
+                        </li>
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">PAGES</a>
+                        </li>
+                        <li><a href="" class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3"><i
+                                    class="pe-2 fa-solid fa-heart"></i> WISHLIST</a></li>
+                        <li><a href="" class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3"><i
+                                    class="pe-2 fa-solid fa-down-left-and-up-right-to-center"></i> COMPARE</a></li>
+                        <li><a href="" class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3"><i
+                                    class="pe-2 fa-solid fa-user"></i> LOGIN / REGISTER</a></li>
+                    </ul>
+                    <ul class="right-menu p-0">
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">FURNITURE</a>
+                        </li>
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">LIGHTING</a>
+                        </li>
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">ACCESSORIES</a>
+                        </li>
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">CLOCKS</a>
+                        </li>
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">COOKING</a>
+                        </li>
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">ELECTRONICS</a>
+                        </li>
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">MINIMALISM</a>
+                        </li>
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">FASHION</a>
+                        </li>
+                        <li><a href=""
+                                class="py-3 text-xs w-100 d-block text-start text-dark border-bottom px-3">TOYS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MOBIL MENU FINIHS -->
+
+
+    <!-- BUY ENVANTO -->
+    <a href="" class="buy-envamto">
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="40px" height="40px" viewBox="0 0 415.441 415.441" fill="#81b441"
+            xml:space="preserve">
+            <path
+                d="M324.63,22.533C135.173,226.428,80.309,371.638,80.309,371.638c41.149,47.743,111.28,43.72,111.28,43.72 			c73.921,2.31,119.192-43.522,119.192-43.522c91.861-92.516,80.549-355.302,80.549-355.302 			C372.769-23.891,324.63,22.533,324.63,22.533z">
+            </path>
+            <path
+                d="M32.369,181.983c0,0-28.983,57.964,18.859,155.495L178.367,58.01C176.916,58.538,63.691,98.037,32.369,181.983z">
+            </path>
+        </svg>
+        <span class="font-weight-bold text-sm">Buy WoodMart</span>
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="asset/js/slider.js"></script>
+    <script src="asset/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
