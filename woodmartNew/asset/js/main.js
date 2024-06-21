@@ -32,10 +32,10 @@ $('.main-slider').slick({
     speed: 500,
     fade: true,
     cssEase: 'linear',
-    /*=   Burada sağ sol butonlar için stillendirme yapılabilir son eklenen left/right etiketleri ile css kodları yazılabilir   =*/
+    
     prevArrow: '<i class="fa-solid fa-angle-left left_arrow"></i>',
     nextArrow: '<i class="fa-solid fa-angle-right right_arrow"></i>',
-    /*=   dots içinde sadece css kodu olması yeterli olacaktır '.slick-dots  normal' - '.slick-dots .slick-active aktif olan için'   =*/
+    
 
 });
 
