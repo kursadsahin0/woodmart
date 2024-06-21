@@ -80,8 +80,5 @@ function renkgetir(evt, renkler) {
 
 }
 
-/* Boostrap menüleri için açılır menü yapmıştım fakat biraz sorunu var ama çalışıyor zamanım olamdığı için şuanlık gizliyorum  
-$('.dropdown').hover(function () {
-    $('.dropdown-toggle', this).trigger('click');
-});*/
+
 
